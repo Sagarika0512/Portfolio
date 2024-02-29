@@ -1,95 +1,80 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
-@import url(https://fonts.googleapis.com/css?family=Besley:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: "Roboto Slab", serif;
 }
-
-/*this is for declaring global variable*/
-:root{
-    --bg-color: #191f36;
-    --snd-bf-color: #262b40;
-    --text-color: #fff;
-    --main-color: #59b2f4;
-}
-
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-
 body{
-    background: var(--bg-color);
-    color: var(--text-color);
+    background: #0B373D;
+    color: #fff;
 }
 
-section{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+#header{
+    width: 100%;/*try auto*/
+    height: 100vh;/*this too*/
+    background-image: url(images/Desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: var(--bg-color);
+.container{
+    padding: 10px 10%;
+
+}
+
+nav{
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    flex-wrap: wrap;
 }
 
 .logo{
-    font-size: 2.5rem;
-    color: var(--text-color);
-    font-weight: 700;
-    cursor: default;
+    margin-top: 10%;
+    width: 30vw;
+    animation: floatImage 4s ease-in-out infinite;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(67, 252, 255, 0.959), 0 6px 20px 0 rgba(179, 20, 20, 0.19);
+
+}
+@keyframes floatImage{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(7rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
-.navbar a{
-    font-size: 1.5rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 700;
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-.navbar a:hover,
-.navbar a.active{
-    color: var(--text-color);
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
 }
 
-#menu-icon{
-    font-size: 3.6rem;
-    color: var(--text-color);
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-content h3{
-    font-size: 3.2rem;
-    font-weight: 700;
-}
-
-.home-content h3:nth-of-type(2){
-    margin-bottom: 2rem;
+.header-text{
+    text-align: justify;
+    font-size: 100%;
+    margin-top: 1%;
 }
 
 span{
-    color: var(--main-color);
+    color:#5fe729;
+    font-size: 50px;
 }
 
-.home-content h1{
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
+#about{
+    padding: 80px 0;
 }
-
