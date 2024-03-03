@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +22,6 @@ body{
 
 .container{
     padding: 10px 10%;
-
 }
 
 nav{
@@ -75,6 +76,61 @@ span{
     font-size: 50px;
 }
 
-#about{
-    padding: 80px 0;
+/*         ABOUT SECTION          */
+
+.col1{
+    float: left;
+    width: 50%;
+    padding: 12px;
+    margin: 3%;
 }
+
+.col2{
+    font-size: 80px;
+    font-family: "Playfair Display", serif;
+    
+}
+
+.col2 p{
+    font-size: 20%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+    align-items: center;
+
+}
+
+.aboutme{
+    width: 80%;
+    height: 80%;
+}
+
+/*         SKILLS          */
+.icon1{
+    float: left;
+    width: 50%;
+    padding: 12px;
+    margin: 3%;
+}
+
+.icon2{
+    font-size: 80px;
+    font-family: "Playfair Display", serif;
+    
+}
+
+
+
+
+
+/*         PROJECTS          */
+
+
+
+
+
+
+/*         CONTACTS          */
