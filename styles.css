@@ -27,12 +27,13 @@ body{
 .container{
     font-size: 80px;
     font-family: "Playfair Display", serif;
-    margin: 20px;
+    margin: 30px;
     text-align: center;
 }
 
 /*  HEADER DESIGN */
 .header{
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -53,7 +54,9 @@ nav ul li{
 }
 
 .navigate{
-    padding: 10px 10%;
+    padding: auto;
+    height: 20%;
+    background-image: linear-gradient(to right, #0A565E, #1CBFB6, #0A565E);
 }
 
 .navbar a{
@@ -166,7 +169,23 @@ span{
 
 
 /*         PROJECTS          */
+.head{
+    font-size: 80px;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+    align-items: center;
+}
 
+.head .p1{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.head .p1 ul li{
+    font-size: 20px;
+}
 
 
 
@@ -211,3 +230,7 @@ span{
     justify-content: center;
     margin-left: 50%;
 }
+
+
+
+
