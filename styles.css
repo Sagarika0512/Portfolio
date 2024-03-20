@@ -1,107 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    border: #000000;
-    scroll-behavior: smooth;
-}
-
-html{
-    font-size: 80%;
-    overflow-x: hidden;
-    
-}
-
+/*body*/
 body{
-    background: #0B373D;
-    color: #fff;
     background-image: url(images/Desktop.jpg);
-    font-family: "Playfair Display", serif;
 }
 
-/*      ALL HEADINGS        */
-
-.container{
-    font-size: 80px;
-    font-family: "Playfair Display", serif;
-    margin: 30px;
-    text-align: center;
+/*       NAVBAR       */
+/* Default font color */
+.navbar .nav-link{
+    color: #0A565E;   
+}
+/* Font color on hover */
+.navbar .nav-link:hover{
+    color: #1CBFB6;
 }
 
-/*  HEADER DESIGN */
-.header{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 100;
-    
-}
-
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 10px;
-
-}
-
-.navigate{
-    padding: auto;
-    height: 20%;
-    background-image: linear-gradient(to right, #0A565E, #1CBFB6, #0A565E);
-}
-
-.navbar a{
-    /*display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;*/
-    font-size: 20px;
-    margin-left: 4rem;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-    position: relative;
-}
-
-.navbar a:hover{
-    color: #fff;
-}
-
-
-
-
-
-
-/*  HOME SECTION    */
-
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    padding-top: 10%;
-}
-
-.home .txt{
-    padding: 10% 0% 0% 10%; /*top right down left*/
-}
-
-.logo{
-    margin-top: 2%;
-    width: 30vw;
+/*       HOME       */
+/*COL1 IMAGE*/
+.img-fluid{
+    margin-top: 0;
+    width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
     border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(67, 252, 255, 0.959), 0 6px 20px 0 rgba(179, 20, 20, 0.19);
+    box-shadow: 3px 6px 8px 0 rgba(67, 252, 255, 0.959), 0 6px 20px 0 rgba(179, 20, 20, 0.19);
 
 }
+/*IMAGE ANIMATION*/
 @keyframes floatImage{
     0%{
         transform: translateX(0);
@@ -113,124 +36,96 @@ nav ul li{
         transform: translateX(0);
     }
 }
+/*TEXT*/
+.col-lg-6{
+    margin-top: 5%;
+    color: #fff;
+ }
+ span{
+     color:#0c568b;
+     font-size: 40px;
+ }
 
-span{
-    color:#0c568b;
-    font-size: 50px;
+/*       ABOUT       */
+#about .container{
+    margin-bottom: auto;
+}
+#about .col-lg-6{
+    color: #000;
+}
+#about .img-fluid1{
+    margin-top: 5%;
+    height: 55vh;
+    width: 40vw;
+    border-color: #000;
 }
 
-/*         ABOUT SECTION          */
-
-.col1{
-    float: left;
-    width: 50%;
-    padding: 12px;
-    margin: 3%;
-}
-
-
-.col2 p{
-    font-size: 15px;
-    font-family: "Playfair Display", serif;
-}
-
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-    align-items: center;
-
-}
-
-.aboutme{
-    width: 80%;
-    height: 80%;
-}
-
-/*         SKILLS          */
-
-
-
-.contain{
-    font-size: 80px;
-    font-family: "Playfair Display", serif;
-    display: flex;
-    justify-content: space-around;
-    margin: 10%;
-}
-
-.container div{
-    font-size: 20px;
-}
-
-
-
-
-
-
-/*         PROJECTS          */
-.head{
-    font-size: 80px;
-    font-family: "Playfair Display", serif;
-    display: flex;
-    justify-content: space-around;
-    margin: 2%;
-    align-items: center;
-}
-
-.head .p1{
-    font-size: 40px;
-    padding: 10px;
-}
-
-.head .p1 ul li{
-    font-size: 20px;
-}
-
-
-
-
-
-/*         CONTACTS          */
-
-#contact{
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#contact div{
-    display: flex;
-    justify-content: space-between;
-}
-
-#contact p{
-    font-size: 30px;
-    margin: 0%;
-}
-
-.c-icons{
-    display: flex;
-    justify-content: space-between;
+/*       SKILLS       */
+#skills .container{
     margin-top: 20px;
-    
+    margin-bottom: auto;
 }
-
-.c-icons i{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    
-}
-
-.c-icons ul li{
-    list-style: none;
+#skills .row{
     display: flex;
-    justify-content: center;
-    margin-left: 50%;
+    flex-wrap: wrap;
+}
+#skills img{
+    height: auto;
+    max-width: 70px;
+    margin-bottom: 2px;
+}
+#skills span{
+    color: #fff;
+    font-size: 20px;
+}
+
+/*       PROJECTS       */
+#projects .container{
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+#projects .project{
+    margin-top: auto;
+    color: #000;
+}
+
+/*       CONTACT       */
+#contact .container{
+    margin-top: 10px;
+    margin-bottom: 100px;
 }
 
 
+/* FOOTER */
+footer {
+  background-color: #0A565E;
+  /*padding: 1% 0;  Add padding to the top and bottom */
+}
+.list-inline-item {
+  text-align: center; /* Center the text under the icons */
+}
 
+.list-inline-item a i {
+  color: black; /* Set the default icon color */
+  font-size: 40px;
+  display: block; /* Change the display property to block */
+  margin-bottom: 2%; /* Add some space between the icon and text */
+  text-decoration: none; /* Remove underline */
+}
+
+.list-inline-item h5 {
+  color: white; /* Set the text color to white */
+  font-size: 18px; /* Adjust the font size */
+  margin-top: 5px; /* Add some top margin to separate text from icons */
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-inline-item a:hover i {
+  color: #1CBFB6; /* Change the icon color on hover */
+}
+.row{
+  padding-bottom: 1px;
+}
 

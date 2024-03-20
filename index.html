@@ -1,155 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--        FONT AWESOME LINK       -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!--        MAIN CSS LINK       -->
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--        FONT AWESOME LINK       -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--        BOOTSTRAP       -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!--        MAIN CSS LINK       -->
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS file -->
+
 </head>
 <body>
-    
-    <!--        HEADER DESIGN       -->
-        <header class="header">
-            <div class="navigate">
-                <nav class="navbar"> 
-                    <ul> 
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+
+  <!-- Navigation Section -->
+  <nav id="nav" class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="images/Sagarika.jpg" class="img-fluid" alt="Profile Picture">
+        </div>
+        <div class="col-lg-6">
+            <h1>Hi, I'm <span>Sagarika</span></h1>
+            <h4>I am a 2023 graduate who knows<br>about Core Java, HTML, CSS, JavaScript and SQL.
+              <br>And starting to learn more of front and the backend developer's life.
+              <br>An inquisitive person who has started to learn more of the frontend and the backend developer's life.
+            </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+            <h2>ABOUT</h2>
+            <p>
+                <br>With a strong educational foundation in Computer Science & Engineering, 
+                I am highly motivated to utilize my skills and knowledge in an entry-level role within a forward-thinking organization. 
+                I am enthusiastic about becoming part of a collaborative team that values innovation, allowing me to further develop my abilities 
+                and make meaningful contributions. My expertise in programming and logical thinking enables me to excel in problem-solving, 
+                and I am eager to apply these skills in an environment that recognizes impactful achievements and embraces a progressive mindset. 
+                Furthermore, my friendly nature ensures that I am always approachable and willing to provide assistance, fostering a supportive and harmonious work atmosphere.
+            </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/about.jpg" class="img-fluid1" alt="About Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2>Skills</h2>
+        <h3>Technologies that I have worked with:</h3>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img src="images/html.png" alt="Icon 1">
+                <p><span class="skill">HTML</span></p>
             </div>
-        </header>
-            
-            
-    <!--        HOME SECTION        -->
-        <section class="home" id="home">
-            <div class="home-img">
-                <img src="images\Sagarika.jpg" class="logo" alt="profile_pic">
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img src="images/css.png" alt="Icon 2">
+                <p><span class="skill">CSS</span></p>
             </div>
-            <div class="txt">
-                <p><h1>Hi, I'm <span>Sagarika</span></h1></p>
-                <h1>I am a 2023 graduate who knows<br>about Core Java, HTML, CSS, JavaScript and SQL.
-                    <br>And starting to learn more of front and the backend developer's life.
-                    <br>An inquisitive person who has started to learn more of the frontend and the backend developer's life.</h1>
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img src="images/js.png" alt="Icon 3">
+                <p><span class="skill">JAVASCRIPT</span></p>
             </div>
-        </section>
-       
-   
-
-    <!--        ABOUT SECTION       -->
-
-        <section id="about" class="container">
-            ABOUT
-            <div class="col1">
-                <img alt="Another Profile Picture" src="images/about.jpg" class="aboutme">
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img src="images/java.png" alt="Icon 4">
+                <p><span class="skill">JAVA</span></p>
             </div>
-            <div class="col2">
-                
-                <p>With a strong educational foundation in Computer Science & Engineering, 
-                    I am highly motivated to utilize my skills and knowledge in an entry-level role within a forward-thinking organization. 
-                    I am enthusiastic about becoming part of a collaborative team that values innovation, allowing me to further develop my abilities 
-                    and make meaningful contributions. My expertise in programming and logical thinking enables me to excel in problem-solving, 
-                    and I am eager to apply these skills in an environment that recognizes impactful achievements and embraces a progressive mindset. 
-                    Furthermore, my friendly nature ensures that I am always approachable and willing to provide assistance, fostering a supportive and harmonious work atmosphere.
-                </p>
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img src="images/sql.png" alt="Icon 5">
+                <p><span class="skill">MYSQL</span></p>
             </div>
-       
-        </section>
-
-    <!--        SKILLS      -->
-   
-        <section id="skills" class="container">
-            SKILLS
-
-            <div class="contain">
-                <div class="html">
-                    <img src="images/html.png" alt="html_icon"> 
-                    <p>HTML</p>
-                </div>
-            
-                <div class="css">
-                    <img src="images/css.png" alt="css_icon">
-                    <p>CSS</p>
-                </div>
-            
-                <div class="js">
-                    <img src="images/js.png" alt="javascript_icon">
-                    <p>JAVASCRIPT</p>
-                </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img src="images/csharp.png" alt="Icon 6">
+                <p><span class="skill">C#</span></p>
             </div>
-
-
-
-            <div class="contain">
-                <div class="java">
-                    <img src="images/java.png" alt="java_icon">
-                    <p>JAVA</p>
-                </div>
-            
-                <div class="mysql">
-                    <img src="images/sql.png" alt="mysql_icon">
-                    <p>MYSQL</p>
-                </div>
-            
-                <div class="c-sharp">
-                    <img src="images/csharp.png" alt="csharp_icon">
-                    <p>C-SHARP</p>
-                </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img src="images/vs.png" alt="Icon 7">
+                <p><span class="skill">VS CODE</span></p>
             </div>
-        </section>
-
-    <!--       PROJECTS         -->
-
-    <section id="projects" class="container">
-        PROJECTS
-        <div class="head">
-            <div class="p1">
-                Digitized Attendance System:
-                <p><ul>
-                    <li>Developed a paperless attendance systemin a team, reducing
-                    administrative workload.</li>
-                    <li>Created a database to store student information and lecture
-                    attendance records.</li>
-                    <li>Simplified attendance tracking for different lectures.</li>
-                </ul></p>
-            </div>
-            <div class="p1">
-                Online M-Hospital Appointment System:
-                <p><ul>  
-                    <li>Collaborated on a project enabling patients to easily schedule
-                    appointments online.</li>
-                    <li>Designed a 3-level user interface for patients, doctors, and
-                    administrators.</li>
-                    <li>Incorporated patient diagnostic history and doctor availability
-                    features.</li>
-                </ul></p>
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img src="images/github.png" alt="Icon 8">
+                <p><span class="skill">GITHUB</span></p>
             </div>
         </div>
-    </section>
+    </div>
+  </section>
+  
 
-    <!--       CONTACTS         -->
-
-    <section id="contact" class="container">
-        CONTACTS
-        <p>Ways to connect to me!<br></p>
-        
-        <div class="c-icons">
+  <!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="project">
+            <h3>Digitized Attendance System:</h3>
             <ul>
-                <li><i class="fa-solid fa-phone" aria-hidden="true"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><br>8077390880</i></li><br>
-                <li><i class="fa fa-envelope" aria-hidden="true"><br>sagarika0525@gmail.com</i></li><br>
-                <li><i class="fa-brands fa-linkedin" aria-hidden="true"><br>https://www.linkedin.com/in/sagarika-chauhan-01b089247</i></li><br>
-                <li><i class="fa-brands fa-github" aria-hidden="true"><br>https://github.com/Sagarika0512</i></li><br>
+              <li>Developed a paperless attendance system in a team, reducing administrative workload.</li>
+              <li>Created a database to store student information and lecture attendance records.</li>
+              <li>Simplified attendance tracking for different lectures.</li>
             </ul>
+          </div>
         </div>
-    </section>
-    
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="project">
+            <h3>Online Hospital Appointment System:</h3>
+            <ul>
+              <li>Collaborated on a project enabling patients to easily schedule appointments online.</li>
+              <li>Designed a 3-level user interface for patients, doctors, and administrators.</li>
+              <li>Incorporated patient diagnostic history and doctor availability features.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-white py-4 fixed-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Icons Column -->
+        <div class="col-md-8 text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="resume/Sagarika_Resume.pdf" rel="noopener" download><i class="fa-solid fa-file"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sagarika-chauhan-01b089247" rel="noopener" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/Sagarika0512" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="mailto:sagarika0525@gmail.com"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        <!-- Text Column -->
+        <div class="col-md-8 text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><h5>Download Resume</h5></li>
+            <li class="list-inline-item"><h5>Linkedin Profile</h5></li>
+            <li class="list-inline-item"><h5>GitHub Profile</h5></li>
+            <li class="list-inline-item"><h5>Email</h5></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
