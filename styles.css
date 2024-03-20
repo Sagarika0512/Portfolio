@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /*body*/
 body{
@@ -19,6 +20,48 @@ body{
 .img-fluid{
     margin-top: 0;
     width: 25vw;
+=======
+body{
+    background-image: url(images/Desktop.jpg);
+    font-family: "Playfair Display", serif;
+    margin: 0 5% 0 5%;   /*top right down left*/
+}
+
+.container{
+    margin: 1px;
+}
+
+/*      NAVIGATION TAB      */
+.navbar{
+    
+    background-color: #fff;
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Default font color */
+.navbar-nav .nav-link {
+    color: #0A565E;
+}
+  
+  /* Font color on hover */
+.navbar-nav .nav-link:hover {
+    color: #1CBFB6;
+}
+
+
+
+/*   HOME   */
+
+/*COL1 IMAGE*/
+.img-fluid{
+    margin-top: 2%;
+    width: 30vw;
+>>>>>>> c1d69f273b13aef3bec29c95281185e1d4ab4baf
     animation: floatImage 4s ease-in-out infinite;
     border-radius: 50%;
     box-shadow: 3px 6px 8px 0 rgba(67, 252, 255, 0.959), 0 6px 20px 0 rgba(179, 20, 20, 0.19);
@@ -36,6 +79,7 @@ body{
         transform: translateX(0);
     }
 }
+<<<<<<< HEAD
 /*TEXT*/
 .col-lg-6{
     margin-top: 5%;
@@ -93,7 +137,78 @@ body{
 #contact .container{
     margin-top: 10px;
     margin-bottom: 100px;
+=======
+span{
+    color:#0c568b;
+    font-size: 50px;
 }
+
+
+/*  ABOUT    */
+
+#home, #about{
+    padding-top: 70px;
+    margin: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> c1d69f273b13aef3bec29c95281185e1d4ab4baf
+}
+#about .col-lg-6{
+    color: #000;
+}
+.img-fluids{
+    margin-top: 10%;
+    height: 55vh;
+    width: 40vw;
+    border-color: black;
+}
+  
+
+
+/*  SKILLS    */
+#skills{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.skill-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  /* Individual skill item */
+  .skill-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 30px; /* Add spacing between items */
+  }
+  
+  /* Image */
+  .skill-item img {
+    width: 100px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Add spacing between image and text */
+  }
+  
+  /* Text */
+  .skill-item span {
+    color: #ffffff;
+    font-size: xx-large;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    /* Stack items vertically on smaller screens */
+    .skill-item {
+        margin-left: 0 20px 10px 0; /*top right down left*/
+    }
+    .skill-item span {
+        margin-left: 15px;
+      }
+  }
 
 
 /* FOOTER */
@@ -129,3 +244,73 @@ footer {
   padding-bottom: 1px;
 }
 
+/*  PROJECTS    */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-col {
+    flex: 1;
+    padding: 10px;
+    margin-left: 10px; /* Adjust the margin as needed */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align content vertically */
+    justify-content: space-around; /* Align content vertically */
+    align-items: center;
+    }
+  
+  .flex-col:last-child {
+    margin-right: 0;
+  }
+  
+  .project {
+    padding: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+  
+
+/*  CONTACT    */
+/*  EXTRA    */
+.contact-icons {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contact-icons li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
+  
+  .contact-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .contact-icons li a {
+    color: #000; /* Change icon color */
+    font-size: 50px;
+  }
+
+  .contact-text {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contact-text li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
+  
+  .contact-text li:last-child {
+    margin-right: 0;
+  }
+  
+  .contact-text li a {
+    color: #000; /* Change icon color */
+    font-size: 24px;
+  }
+  
