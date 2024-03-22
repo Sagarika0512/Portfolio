@@ -19,23 +19,11 @@ body{
 .img-fluid{
     margin-top: 0;
     width: 25vw;
-    animation: floatImage 4s ease-in-out infinite;
     border-radius: 50%;
     box-shadow: 3px 6px 8px 0 rgba(67, 252, 255, 0.959), 0 6px 20px 0 rgba(179, 20, 20, 0.19);
 
 }
-/*IMAGE ANIMATION*/
-@keyframes floatImage{
-    0%{
-        transform: translateX(0);
-    }
-    50%{
-        transform: translateX(7rem);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
+
 /*TEXT*/
 .col-lg-6{
     margin-top: 5%;
@@ -47,9 +35,6 @@ body{
  }
 
 /*       ABOUT       */
-#about .container{
-    margin-bottom: auto;
-}
 #about .col-lg-6{
     color: #000;
 }
@@ -90,6 +75,7 @@ body{
 }
 
 /*       CONTACT       */
+
 #contact .container{
     margin-top: 10px;
     margin-bottom: 100px;
@@ -116,7 +102,7 @@ footer {
 .list-inline-item h5 {
   color: white; /* Set the text color to white */
   font-size: 18px; /* Adjust the font size */
-  margin-top: 5px; /* Add some top margin to separate text from icons */
+  margin-top: 1px; /* Add some top margin to separate text from icons */
   list-style: none;
   display: flex;
   justify-content: space-around;
