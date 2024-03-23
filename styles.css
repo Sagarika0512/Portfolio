@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-/*body*/
+                                        /*body*/
 body{
-    background-image: url(images/Desktop.jpg);
+    background-color: #06767D;
+    color: #000;
 }
 
-/*       NAVBAR       */
+                                    /*       NAVBAR       */
 /* Default font color */
+.navbar-brand{
+    color: #1CBFB6;   
+}
 .navbar .nav-link{
-    color: #0A565E;   
+    color: #1CBFB6;   
 }
 /* Font color on hover */
 .navbar .nav-link:hover{
-    color: #1CBFB6;
+    color: #1a3edb;
 }
 
-/*       HOME       */
+                                    /*       HOME       */
 /*COL1 IMAGE*/
 .img-fluid{
     margin-top: 0;
@@ -26,26 +30,26 @@ body{
 
 /*TEXT*/
 .col-lg-6{
-    margin-top: 5%;
+    margin-top: 4%;
     color: #fff;
  }
  span{
-     color:#0c568b;
+     color: #1cded4;
      font-size: 40px;
  }
 
-/*       ABOUT       */
+                                    /*       ABOUT       */
 #about .col-lg-6{
     color: #000;
+    margin-top: 1px;
 }
 #about .img-fluid1{
-    margin-top: 5%;
     height: 55vh;
     width: 40vw;
     border-color: #000;
 }
 
-/*       SKILLS       */
+                                    /*       SKILLS       */
 #skills .container{
     margin-top: 20px;
     margin-bottom: auto;
@@ -64,7 +68,7 @@ body{
     font-size: 20px;
 }
 
-/*       PROJECTS       */
+                                    /*       PROJECTS       */
 #projects .container{
     margin-top: 20px;
     margin-bottom: auto;
@@ -74,44 +78,53 @@ body{
     color: #000;
 }
 
-/*       CONTACT       */
+                                    /*       CONTACT       */
 
 #contact .container{
     margin-top: 10px;
-    margin-bottom: 100px;
 }
 
 
-/* FOOTER */
+                                    /*      FOOTER         */
 footer {
   background-color: #0A565E;
-  /*padding: 1% 0;  Add padding to the top and bottom */
+  display: flex; /* Use flexbox to arrange items */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  
 }
 .list-inline-item {
-  text-align: center; /* Center the text under the icons */
-}
+    margin: 0 80px; /* Add margin to each list item */
+  }
 
 .list-inline-item a i {
-  color: black; /* Set the default icon color */
-  font-size: 40px;
-  display: block; /* Change the display property to block */
-  margin-bottom: 2%; /* Add some space between the icon and text */
-  text-decoration: none; /* Remove underline */
-}
-
-.list-inline-item h5 {
-  color: white; /* Set the text color to white */
-  font-size: 18px; /* Adjust the font size */
-  margin-top: 1px; /* Add some top margin to separate text from icons */
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+    color: black; /* Set the default icon color */
+    font-size: 40px;
+    text-decoration: none; /* Remove underline */
 }
 
 .list-inline-item a:hover i {
   color: #1CBFB6; /* Change the icon color on hover */
 }
-.row{
-  padding-bottom: 1px;
-}
-
+/* Tooltips */
+.tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 42%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 18px;
+  }
+/* Show the tooltip text when hovering over the icon */
+.list-inline-item a:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
