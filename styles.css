@@ -79,9 +79,26 @@ body{
 }
 
                                     /*       CONTACT       */
-
+#contact{
+     /* background-color: #f8f9fa; Add background color to the contact section */
+    padding: 10px 0; /* Add padding to create space between content and edges */
+}
 #contact .container{
     margin-top: 10px;
+}
+.form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
+    border: 1px solid #000000; /* Add border to input fields */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: transparent; /* Add background color to input fields */
+    padding: 10px; /* Add padding inside input fields */
+    width: 100%; /* Make input fields expand to fill container */
+    margin-bottom: 15px; /* Add margin between input fields */
+}
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group textarea::placeholder {
+    color: #ffffff; /* Change the placeholder text color */
+    font-size: 20px; /* Change the placeholder text size */
 }
 
 
@@ -122,7 +139,9 @@ footer {
     opacity: 0;
     transition: opacity 0.3s;
     font-size: 18px;
-  }
+    transform: translateX(5%); /* Center tooltip horizontally */
+    transition: opacity 0.3s;
+}
 /* Show the tooltip text when hovering over the icon */
 .list-inline-item a:hover .tooltiptext {
     visibility: visible;
