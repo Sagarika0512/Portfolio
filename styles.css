@@ -5,6 +5,11 @@ body{
     color: #000;
 }
 
+.sec{
+    margin: 50px 0 50px 0 !important;   /* TOP RIGHT BOTTOM LEFT */
+    padding-top: 60px !important;  
+}
+
                                     /*       NAVBAR       */
 /* Default font color */
 .navbar-brand{
@@ -44,7 +49,8 @@ body{
     margin-top: 1px;
 }
 #about .img-fluid1{
-    height: 55vh;
+    padding-top: 60px;
+    height: 60vh;
     width: 40vw;
     border-color: #000;
 }
@@ -86,10 +92,10 @@ body{
 #contact .container{
     margin-top: 10px;
 }
-.form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
+
+.form-group input[type="text"], .form-group input[type="email"], .form-group textarea{
     border: 1px solid #000000; /* Add border to input fields */
     border-radius: 10px; /* Add border radius for rounded corners */
-    background-color: transparent; /* Add background color to input fields */
     padding: 10px; /* Add padding inside input fields */
     width: 100%; /* Make input fields expand to fill container */
     margin-bottom: 15px; /* Add margin between input fields */
@@ -100,6 +106,7 @@ body{
     color: #ffffff; /* Change the placeholder text color */
     font-size: 20px; /* Change the placeholder text size */
 }
+  
 
 
                                     /*      FOOTER         */
@@ -110,7 +117,7 @@ footer {
   
 }
 .list-inline-item {
-    margin: 0 80px; /* Add margin to each list item */
+    margin: 0 50px; /* Add margin to each list item */
   }
 
 .list-inline-item a i {
@@ -133,7 +140,7 @@ footer {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 80px;
+    top: 40px;
     left: 42%;
     margin-left: -60px;
     opacity: 0;
@@ -146,4 +153,54 @@ footer {
 .list-inline-item a:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+
+
+
+
+
+
+/*                FOR SMALLER MEDIA                                      */
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust padding and margins for smaller screens */
+    #home .col-lg-6, #about .col-lg-6 {
+      margin-top: 10%;
+    }
+    #home h1 {
+      font-size: 24px;
+    }
+    /* Stack columns vertically on smaller screens */
+    #about .row {
+      flex-direction: column;
+    }
+    /* Adjust image size for smaller screens */
+    .img-fluid {
+      width: 50%;
+    }
+    /* Adjust font size for smaller screens */
+    span {
+      font-size: 30px;
+    }
+
+    .navbar-toggle{
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: .25rem;
+    }
+    .img-fluid1{
+        height: 180px !important;
+        width: 238px !important;
+    }
+
+    .list-inline-item {
+        margin: 0 22px !important; /* Add margin to each list item */
+      }
   }
+  
+  /*asdfghjk*/
+  
