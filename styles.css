@@ -6,7 +6,7 @@ body{
 }
 
 .sec{
-    margin: 50px 0 50px 0 !important;   /* TOP RIGHT BOTTOM LEFT */
+    margin: 40px 0 60px 0 !important;   /* TOP RIGHT BOTTOM LEFT */
     padding-top: 60px !important;  
 }
 
@@ -20,8 +20,12 @@ body{
 }
 /* Font color on hover */
 .navbar .nav-link:hover{
-    color: #1a3edb;
+    color: #000;
 }
+.port:hover {
+    color: #000 !important;
+    text-decoration: none !important;
+ }
 
                                     /*       HOME       */
 /*COL1 IMAGE*/
@@ -184,16 +188,11 @@ footer {
       font-size: 30px;
     }
 
-    .navbar-toggle{
-        padding: .25rem .75rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-        background-color: transparent;
-        border: 2px solid black;
-        border-radius: .25rem;
-    }
+    .navbar-toggler{
+        color:black !important;
+      }
     .img-fluid1{
-        height: 180px !important;
+        height: 229px !important;
         width: 238px !important;
     }
 
