@@ -53,8 +53,8 @@ body{
     margin-top: 1px;
 }
 #about .img-fluid1{
-    padding-top: 60px;
-    height: 60vh;
+    padding-top: 10px;
+    height: 70vh;
     width: 40vw;
     border-color: #000;
 }
@@ -107,7 +107,7 @@ body{
 .form-group input[type="text"]::placeholder,
 .form-group input[type="email"]::placeholder,
 .form-group textarea::placeholder {
-    color: #ffffff; /* Change the placeholder text color */
+    color: #000; /* Change the placeholder text color */
     font-size: 20px; /* Change the placeholder text size */
 }
   
@@ -118,6 +118,7 @@ footer {
   background-color: #0A565E;
   display: flex; /* Use flexbox to arrange items */
   justify-content: space-between; /* Distribute items evenly along the main axis */
+  padding: 1.0rem 0 1.5rem 0;
   
 }
 .list-inline-item {
@@ -192,13 +193,18 @@ footer {
         color:black !important;
       }
     .img-fluid1{
-        height: 229px !important;
+        height: 247px !important;
         width: 238px !important;
     }
 
     .list-inline-item {
         margin: 0 22px !important; /* Add margin to each list item */
       }
+    
+      #contact{
+        padding-top: 50px !important;
+      }
+      
   }
   
   /*asdfghjk*/
