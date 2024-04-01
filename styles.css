@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*/
                                         /*body*/
-body{
-    background-color: #06767D;
+*{
+    box-sizing: border-box;
+}
+                                        body{
+    background-color: lightblue; /* Updated background color */
     color: #000;
+    font-family: 'Playfair Display', serif;
 }
 
 .sec{
@@ -13,10 +17,10 @@ body{
                                     /*       NAVBAR       */
 /* Default font color */
 .navbar-brand{
-    color: #1CBFB6;   
+    color: #25a2ca;   
 }
 .navbar .nav-link{
-    color: #1CBFB6;   
+    color: #25a2ca;   
 }
 /* Font color on hover */
 .navbar .nav-link:hover{
@@ -33,17 +37,21 @@ body{
     margin-top: 0;
     width: 25vw;
     border-radius: 50%;
-    box-shadow: 3px 6px 8px 0 rgba(67, 252, 255, 0.959), 0 6px 20px 0 rgba(179, 20, 20, 0.19);
+    box-shadow: 15px 15px 33px 10px rgb(27 149 212 / 56%), 15px 20px 15px 20px rgb(101 232 235 / 29%);
 
 }
 
 /*TEXT*/
 .col-lg-6{
+
     margin-top: 4%;
-    color: #fff;
+    color: #000;
  }
- span{
-     color: #1cded4;
+ .col-lg-6 span{
+    color: #0a6fdd;
+ }
+ .navbar-toggler span{
+     color: #4f9ed0de;
      font-size: 40px;
  }
 
@@ -51,6 +59,7 @@ body{
 #about .col-lg-6{
     color: #000;
     margin-top: 1px;
+    font-size: 18px;
 }
 #about .img-fluid1{
     padding-top: 10px;
@@ -67,14 +76,20 @@ body{
 #skills .row{
     display: flex;
     flex-wrap: wrap;
+    overflow-x: auto;
+  white-space: nowrap;
 }
+#skills .col-lg-3 {
+    display: inline-block;
+    /*margin-right: 15px;  Adjust spacing between skills */
+  }
 #skills img{
     height: auto;
     max-width: 70px;
     margin-bottom: 2px;
 }
 #skills span{
-    color: #fff;
+    color: #000;
     font-size: 20px;
 }
 
@@ -84,14 +99,22 @@ body{
     margin-bottom: auto;
 }
 #projects .project{
-    margin-top: auto;
+    /*margin-top: auto;*/
     color: #000;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
                                     /*       CONTACT       */
 #contact{
      /* background-color: #f8f9fa; Add background color to the contact section */
-    padding: 10px 0; /* Add padding to create space between content and edges */
+    padding: 30px; /* Add padding to create space between content and edges */
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 #contact .container{
     margin-top: 10px;
@@ -115,7 +138,7 @@ body{
 
                                     /*      FOOTER         */
 footer {
-  background-color: #0A565E;
+  background-color: lightskyblue;
   display: flex; /* Use flexbox to arrange items */
   justify-content: space-between; /* Distribute items evenly along the main axis */
   padding: 1.0rem 0 1.5rem 0;
@@ -126,7 +149,7 @@ footer {
   }
 
 .list-inline-item a i {
-    color: black; /* Set the default icon color */
+    color: white; /* Set the default icon color */
     font-size: 40px;
     text-decoration: none; /* Remove underline */
 }
@@ -138,7 +161,7 @@ footer {
 .tooltiptext {
     visibility: hidden;
     width: 200px;
-    background-color: #000;
+    background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
