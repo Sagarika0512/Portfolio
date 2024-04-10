@@ -3,16 +3,12 @@
 *{
     box-sizing: border-box;
 }
-                                        body{
+body{
     background-color: lightblue; /* Updated background color */
     color: #000;
     font-family: 'Playfair Display', serif;
 }
 
-.sec{
-    margin: 40px 0 60px 0 !important;   /* TOP RIGHT BOTTOM LEFT */
-    padding-top: 60px !important;  
-}
 
                                     /*       NAVBAR       */
 /* Default font color */
@@ -44,7 +40,7 @@
 /*TEXT*/
 .col-lg-6{
 
-    margin-top: 4%;
+    margin-top: 10%;
     color: #000;
  }
  .col-lg-6 span{
@@ -69,24 +65,56 @@
 }
 
                                     /*       SKILLS       */
+/* Add your custom CSS rules here */
+
+.carousel-indicators{
+    padding: 0px 23px 209px 0px;
+
+}
+.carousel-item {
+    height: 212px; /* Adjust the height of the carousel items */
+    margin: 23px 0px -30px 20px;
+}
+
+.card {
+    margin-bottom: 20px; /* Adjust the spacing between cards */
+    display: flex;
+    align-items: center;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.card-img-top {
+    max-height: 115px; /* Adjust the height of the card images */
+}
+.card-body{
+    padding: 0.25rem;
+}
+.skill {
+    font-weight: bold; /* Adjust the font weight of the skill text */
+}
+
 #skills .container{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: auto;
 }
 #skills .row{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 90px;
+    margin-left: 50px;
     overflow-x: auto;
-  white-space: nowrap;
+    white-space: nowrap;
 }
-#skills .col-lg-3 {
+/* #skills .col-lg-6 {
     display: inline-block;
-    /*margin-right: 15px;  Adjust spacing between skills */
-  }
+    /*margin-right: 15px;  Adjust spacing between skills 
+  } */
 #skills img{
     height: auto;
-    max-width: 70px;
-    margin-bottom: 2px;
+    max-width: 100px;
+    margin: -5px 10px 10px 10px;
 }
 #skills span{
     color: #000;
@@ -108,55 +136,75 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-                                    /*       CONTACT       */
+                                    /*       CONTACT      
 #contact{
-     /* background-color: #f8f9fa; Add background color to the contact section */
-    padding: 30px; /* Add padding to create space between content and edges */
+     /* background-color: #f8f9fa; Add background color to the contact section 
+    padding: 30px; /* Add padding to create space between content and edges
     border-radius: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
 }
 #contact .container{
     margin-top: 10px;
+    
+}
+form{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .form-group input[type="text"], .form-group input[type="email"], .form-group textarea{
-    border: 1px solid #000000; /* Add border to input fields */
-    border-radius: 10px; /* Add border radius for rounded corners */
-    padding: 10px; /* Add padding inside input fields */
-    width: 100%; /* Make input fields expand to fill container */
-    margin-bottom: 15px; /* Add margin between input fields */
+    border: 1px solid #000000; /* Add border to input fields 
+    border-radius: 10px; /* Add border radius for rounded corners 
+    padding: 10px; /* Add padding inside input fields 
+    width: 100%; /* Make input fields expand to fill container 
+    margin-bottom: 15px; /* Add margin between input fields 
 }
 .form-group input[type="text"]::placeholder,
 .form-group input[type="email"]::placeholder,
 .form-group textarea::placeholder {
-    color: #000; /* Change the placeholder text color */
-    font-size: 20px; /* Change the placeholder text size */
+    color: #000; /* Change the placeholder text color 
+    font-size: 20px; /* Change the placeholder text size 
 }
-  
+
+.btn{
+    text-align: center;
+}
+*/  
 
 
                                     /*      FOOTER         */
 footer {
-  background-color: lightskyblue;
+  background-image: url(images/footerbg.png);
   display: flex; /* Use flexbox to arrange items */
   justify-content: space-between; /* Distribute items evenly along the main axis */
   padding: 1.0rem 0 1.5rem 0;
   
 }
+#footer .img-fluid1 {
+    margin: -25% 50% -23px -23%;
+    /* padding: 0px 0px 0px 0px; */
+    height: 42vh;
+    width: 40vw;
+    border: 4px solid black;
+    border-radius: 0 50px 0 50px; /*top-left top-right bottom-right bottom-left*/
+}
+
 .list-inline-item {
     margin: 0 50px; /* Add margin to each list item */
   }
 
 .list-inline-item a i {
-    color: white; /* Set the default icon color */
+    color: rgb(0, 0, 0); /* Set the default icon color */
     font-size: 40px;
     text-decoration: none; /* Remove underline */
 }
 
-.list-inline-item a:hover i {
-  color: #1CBFB6; /* Change the icon color on hover */
-}
+/*.list-inline-item a:hover i {
+  color: #1CBFB6; /* Change the icon color on hover 
+}*/
+
+
 /* Tooltips */
 .tooltiptext {
     visibility: hidden;
@@ -222,13 +270,21 @@ footer {
 
     .list-inline-item {
         margin: 0 22px !important; /* Add margin to each list item */
-      }
+    }
     
-      #contact{
-        padding-top: 50px !important;
-      }
-      
-  }
+    /* #contact{
+       padding-top: 50px !important;
+    } */
+
+    #footer .img-fluid1 {
+        margin: -15% 8% -122px -4%;
+        /* padding: 0px 0px 0px 0px; */
+        height: 55vh !important;
+        width: 70vw !important;
+        border: 4px solid black;
+        border-radius: 0 50px 0 50px; /*top-left top-right bottom-right bottom-left*/
+    }
   
   /*asdfghjk*/
+
   
