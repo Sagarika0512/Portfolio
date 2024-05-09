@@ -1,355 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--    Font Awesome    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS file -->
+    <!--    Bootstrap CSS   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  <!--  JavaScript File -->
-  <script src="main.js"></script>
+    <!--    Custom CSS  -->
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS file -->
 
-
-  <title>My Portfolio</title>
+    <!--    JavaScript File -->
+    
+    <title>My Portfolio</title>
 </head>
 <body>
-
-  <!-- Navigation Section -->
-  <nav id="nav" class="navbar navbar-expand-lg bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#footer">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Home Section -->
-  <section id="home" class="py-5 ">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="images/Sagarika.jpg" class="img-fluid" alt="Profile Picture">
-        </div>
-        <div class="col-lg-6">
-            <h1>Hi, I'm <span>Sagarika</span></h1>
-            <h4>I am a 2023 graduate who knows<br>about Core Java, HTML, CSS, JavaScript and SQL.
-              <br>And starting to learn more of front and the backend developer's life.
-              <br>An inquisitive person who has started to learn more of the frontend and the backend developer's life.
-            </h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>ABOUT</h2>
-          <p>            
-            With a strong educational foundation in Computer Science & Engineering, 
-            I am highly motivated to utilize my skills and knowledge in an entry-level role within a forward-thinking organization. 
-            I am enthusiastic about becoming part of a collaborative team that values innovation, allowing me to further develop my abilities 
-            and make meaningful contributions. My expertise in programming and logical thinking enables me to excel in problem-solving, 
-            and I am eager to apply these skills in an environment that recognizes impactful achievements and embraces a progressive mindset. 
-            Furthermore, my friendly nature ensures that I am always approachable and willing to provide assistance, fostering a supportive and harmonious work atmosphere.
-          </p>
-        </div>
-        <div class="col-lg-6">
-          <img src="images/about.jpg" class="img-fluid1" alt="About Image">
-        </div>
-      </div>
-    </div>
-  </section>
-
- 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 ">
-    <div class="container">
-      <h2>Skills</h2>
-      <h3>Technologies that I have worked with:</h3>
-      <div id="skillsCarousel" class="carousel slide" data-ride="carousel">
-        
-        <!-- <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        </ol> -->
-
-        <div class="carousel-inner">
-          <!-- First Slide --> 
-          <div class="carousel-item active">
-              <div class="row">
-                <div class="col-6 text-center">
-                    <div class="card">
-                      <img src="images/html.png" data-src="images/html.png" class="card-img-top lazy" alt="HTML Icon">
-                      <div class="card-body">
-                          <p class="card-text"><span class="skill">HTML</span></p>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 text-center">
-                    <div class="card">
-                      <img src="images/css.png" class="card-img-top lazy" alt="CSS Icon" data-src="images/css.png">
-                      <div class="card-body">
-                        <p class="card-text"><span class="skill">CSS</span></p>
-                      </div>
-                    </div>
-                </div>
-              </div>
-          </div>
-          
-          <!-- Second Slide -->
-          <div class="carousel-item">   
-              <div class="row">   
-                <div class="col-6 text-center">
-                      <div class="card">
-                        <img src="images/js.png" data-src="images\js.png" class="card-img-top lazy" alt="JavaScript Icon" >
-                        <div class="card-body">
-                            <p class="card-text"><span class="skill">JAVASCRIPT</span></p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-6 text-center">
-                      <div class="card">
-                        <img src="images/java.png" data-src="images/java.png" class="card-img-top lazy" alt="Java Icon">
-                        <div class="card-body">
-                            <p class="card-text"><span class="skill">JAVA</span></p>
-                        </div>
-                      </div>
-                </div>
-              </div>
-          </div>
-            
-          <!-- Third Slide -->
-          <div class="carousel-item">  
-              <div class="row">
-                <div class="col-6  text-center">
-                      <div class="card">
-                        <img src="images/sql.png" data-src="images/sql.png" class="card-img-top lazy" alt="Sql Icon">
-                        <div class="card-body">
-                            <p class="card-text"><span class="skill">SQL</span></p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-6 text-center">
-                      <div class="card">
-                        <img src="images/csharp.png" data-src="images/csharp.png" class="card-img-top lazy" alt="C# Icon">
-                        <div class="card-body">
-                            <p class="card-text"><span class="skill">C#</span></p>
-                        </div>
-                      </div>
-                </div>
-              </div>
-          </div>
-              
-          <!-- Fourth Slide -->
-          <div class="carousel-item">
-              <div class="row">  
-                <div class="col-6 text-center">
-                      <div class="card">
-                        <img src="images/vs.png" data-src="images/vs.png" class="card-img-top lazy" alt="Visual Studio Code Icon">
-                        <div class="card-body">
-                            <p class="card-text"><span class="skill">VS CODE</span></p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-6 text-center">
-                      <div class="card">
-                        <img src="images/github.png" data-src="images/github.png" class="card-img-top lazy" alt="GitHub Icon">
-                        <div class="card-body">
-                            <p class="card-text"><span class="skill">GITHUB</span></p>
-                        </div>
-                      </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <!-- Navigation Controls -->
-        <a class="carousel-control-prev" href="#skillsCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#skillsCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Projects Section -->
-<section id="projects" class="py-5 ">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="project card">
-            <h3>Digitized Attendance System:</h3>
-            <ul>
-              <li>Developed a paperless attendance system in a team, reducing administrative workload.</li>
-              <li>Created a database to store student information and lecture attendance records.</li>
-              <li>Simplified attendance tracking for different lectures.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="project card">
-            <h3>Online Hospital Appointment System:</h3>
-            <ul>
-              <li>Collaborated on a project enabling patients to easily schedule appointments online.</li>
-              <li>Designed a 3-level user interface for patients, doctors, and administrators.</li>
-              <li>Incorporated patient diagnostic history and doctor availability features.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Contact Section 
-  <section id="contact" class="py-5 sec rounded">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form method="post" action="contact.php">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
-            <div class="invalid-feedback">Please enter your name.</div>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea class="form-control" id="message" rows="2" placeholder="Enter your message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" value="submit">Submit</button>
-      </form>
-    </div>
-  </section>
--->
-  <!-- Footer Section -->
-  <footer class="text-white py-5̥" id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="images/footer.png" class="img-fluid1" alt="Profile Picture">
-        </div>
-        
-        <!-- Icons Column -->
-        <div class="col-lg-6">
-          <div class="row justify-content-center">    
-            <div class="col-md-8 text-center">
-              <ul class="list-inline">
+    <header>
+        <!-- Navigation Section -->
+        <nav id="nav" class="navbar bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-logo" href="#home">Portfolio</a>
                 
-                <li class="list-inline-item">
-                  <a href="resume/Sagarika_Resume.pdf" rel="noopener" download title="Download Resume">
-                    <i class="fas fa-file" aria-hidden="true"></i>
-                    <span class="tooltiptext">Download Resume</span>
-                  </a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/sagarika-chauhan-01b089247" rel="noopener" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                    <span class="tooltiptext">LinkedIn</span>
-                  </a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a href="https://github.com/Sagarika0512" target="_blank" rel="noopener" title="GitHub">
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                    <span class="tooltiptext">GitHub</span>
-                  </a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a href="mailto:sagarika0525@gmail.com" title="Gmail">
-                    <i class="fas fa-envelope" aria-hidden="true"></i>
-                    <span class="tooltiptext">Gmail</span>
-                  </a>
-                </li>
-              </ul>
+                <div id="navbarSupportedContent" class="navbar-collapse justify-content-end">
+                    <ul class="navbar-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-            
-        </div>
-      </div>
-    </div>
-    <!-- <div class="container">
-      <div class="row justify-content-center">
-        <!-- Icons Column 
-        <div class="col-md-8 text-center">
-          <ul class="list-inline">
-            
-            <li class="list-inline-item">
-              <a href="resume/Sagarika_Resume.pdf" rel="noopener" download title="Download Resume">
-                <i class="fas fa-file" aria-hidden="true"></i>
-                <span class="tooltiptext">Download Resume</span>
-              </a>
-            </li>
-            
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/sagarika-chauhan-01b089247" rel="noopener" target="_blank" title="LinkedIn">
-                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                <span class="tooltiptext">LinkedIn</span>
-              </a>
-            </li>
-            
-            <li class="list-inline-item">
-              <a href="https://github.com/Sagarika0512" target="_blank" rel="noopener" title="GitHub">
-                <i class="fab fa-github" aria-hidden="true"></i>
-                <span class="tooltiptext">GitHub</span>
-              </a>
-            </li>
-            
-            <li class="list-inline-item">
-              <a href="mailto:sagarika0525@gmail.com" title="Gmail">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
-                <span class="tooltiptext">Gmail</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-  </footer>
+        </nav>
+    </header>
 
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="py-5 pl-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/Sagarika.jpg" alt="Profile Picture" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h1>Hi, I'm <span>Sagarika</span></h1>
+                    <h3>
+                        I am a 2023 graduate who knows<br>about Core Java, HTML, CSS, JavaScript and SQL.
+                        <br>And starting to learn more of front and the backend developer's life.
+                        <br>An inquisitive person who has started to learn more of the frontend and the backend developer's life.
+                    </h3>
+                </div>
+            </div>
+        </section>
+    
+
+        <!-- About Section -->
+        <section id="about" class="py-5 pl-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>ABOUT</h2>
+                    <p>
+                        With a strong educational foundation in Computer Science & Engineering, 
+                        I am highly motivated to utilize my skills and knowledge in an entry-level role within a forward-thinking organization. 
+                        I am enthusiastic about becoming part of a collaborative team that values innovation, allowing me to further develop my abilities 
+                        and make meaningful contributions. My expertise in programming and logical thinking enables me to excel in problem-solving, 
+                        and I am eager to apply these skills in an environment that recognizes impactful achievements and embraces a progressive mindset. 
+                        Furthermore, my friendly nature ensures that I am always approachable and willing to provide assistance, fostering a supportive and harmonious work atmosphere.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/About.jpg" alt="About Image" class="custom-image">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-5 pl-3">
+            <div>
+                <h2>SKILLS</h2>
+                <h3>Technologies that I have worked with:</h3>
+                
+                <!--Carousel-->
+                <div id="skills-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="images/html.png" alt="HTML Icon" class="card-img-top skill-icon">
+                                        <div class="card-body">
+                                            <p class="card-text">HTML</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="images/css.png" alt="CSS Icon" class="card-img-top skill-icon">
+                                        <div class="card-body">
+                                            <p class="card-text">CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="images/js.png" alt="JavaScript Icon" class="card-img-top skill-icon">
+                                        <div class="card-body">
+                                            <p class="card-text">JavaScript</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="images/java.png" alt="Java Icon" class="card-img-top skill-icon">
+                                        <div class="card-body">
+                                            <p class="card-text">JAVA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="images/sql.png" alt="JSQL Icon" class="card-img-top skill-icon">
+                                        <div class="card-body">
+                                            <p class="card-text">SQL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="images/csharp.png" alt="C# Icon" class="card-img-top skill-icon">
+                                        <div class="card-body">
+                                            <p class="card-text">C#</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="images/vs.png" alt="Visual Studio Code Icon" class="card-img-top skill-icon">
+                                        <div class="card-body">
+                                            <p class="card-text">VS CODE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="images/github.png" alt="GitHub Icon" class="card-img-top skill-icon">
+                                        <div class="card-body">
+                                            <p class="card-text">GITHUB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#skills-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#skills-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 pl-3">
+            <div class="pro">
+                <h2>PROJECTS</h2>
+                <div class="project-card">
+                    <div class="project">
+                        <h2>Digitized Attendance System</h2>
+                        <h3>Description:</h3>
+                        <ul>
+                            <li>Developed a paperless attendance system in a team, reducing administrative workload.</li>
+                            <li>Created a database to store student information and lecture attendance records.</li>
+                            <li>Simplified attendance tracking for different lectures.</li>
+                        </ul>
+                        <h3>Technologies used:</h3>
+                        <p>C#(Language), Visual Studio(Platform), MS Excel(Database)</p>
+                        <h3>Your role:</h3>
+                        <p>
+                            I was responsible for the comprehensive documentation of the entire project, which included
+                            creating detailed project reports.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project">
+                        <h2>Online M-Hospital Appointment System</h2>
+                        <h3>Description:</h3>
+                        <ul>
+                            <li>Collaborated on a project enabling patients to easily schedule appointments online.</li>
+                            <li>Designed a 3-level user interface for patients, doctors, and administrators.</li>
+                            <li>Incorporated patient diagnostic history and doctor availability features.</li>
+                        </ul>
+                        <h3>Technologies used:</h3>
+                        <p>Java, XML(Language), Android Studio(Platform), MySQL(Database)</p>
+                        <h3>My role:</h3>
+                        <p>
+                            I contributed to the database architecture by writing SQL queries for table creation. I played a key
+                            role in ideation, proposing the workflow and determining the number of forms required for the project.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project">
+                        <h2>Self-Made GUI Applications</h2>
+                        <h3>Java GUI Calculator:</h3>
+                        <p>Developed a basic calculator. The application performs basic arithmetic operations,
+                            demonstrating proficiency in Java and GUI development.</p>
+                        
+                        <h3>GST Calculator:</h3>
+                        <p>Built a GST calculator as a GUI application, further demonstrating proficiency in Java and
+                            the ability to create useful tools.</p>
+                        
+                        <h3>Time Converter:</h3>
+                        <p>Developed a time converter application, highlighting the ability to work with time data and
+                            create user-friendly interfaces.</p>
+                        
+                        <h3>Measurement Converter:</h3>
+                        <p>Created a Java GUI application using the javax.swing.JFrame library for unit
+                            conversion. It supports various conversions like distance, temperature, and weight. Users input values, select
+                            the conversion type, and the application displays the converted value upon button click.</p>
+                        
+                        <h3>Smart Parking System:</h3>
+                        <p>Created a Java GUI for a parking system, featuring database connectivity. It
+                            calculates parking fees based on duration and vehicle details input by users. The system also allows data
+                            deletion, enabling users to remove their vehicle information.</p>
+                        
+                        <h3>Technologies used:</h3>
+                        <p>Java (Language), NetBeans (Platform), MySql (Database)</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
+         <!-- Contact Section -->
+    <footer>
+        <section id="contact" class="py-5 pl-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/footer.png" alt="Contact image" class="custom-img"/>
+                </div>
+
+                <div class="col-lg-6">
+                    <ul>
+                        <li>
+                            <a href="resume/Sagarika_Resume.pdf" rel="noopener" download>
+                                <i class="fas fa-file" aria-hidden="true"></i>
+                                <span class="tooltiptext">Download Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sagarika-chauhan-01b089247" rel="noopener" target="_blank">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <span class="tooltiptext">LinkedIn <br> Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Sagarika0512" target="_blank" rel="noopener">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                <span class="tooltiptext">GitHub <br> Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:sagarika0525@gmail.com">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <span class="tooltiptext">Gmail <br> Link</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </footer>
 
   <!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 
-
+    
 </body>
 </html>

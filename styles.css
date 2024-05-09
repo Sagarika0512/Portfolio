@@ -1,232 +1,250 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*/
-                                        /*body*/
 *{
     box-sizing: border-box;
+    box-shadow: 20px;
 }
 body{
-    background-color: lightblue; /* Updated background color */
+    background-color: lightblue;
     color: #000;
+    font-family: 'Poetsen One', cursive;
+    margin: 10px 10px 0 10px;
+}
+
+/*      NAVBAR      */
+.navbar .container{
+    flex-wrap: nowrap !important; /* Override flex-wrap: wrap; */;
+}
+.navbar{
+    background-color: #f8f9fa;
+    padding: 0.5rem 0 0.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     font-family: 'Playfair Display', serif;
 }
-
-
-                                    /*       NAVBAR       */
-/* Default font color */
-.navbar-brand{
-    color: #25a2ca;   
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
 }
-.navbar .nav-link{
-    color: #25a2ca;   
+.navbar-logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
-/* Font color on hover */
-.navbar .nav-link:hover{
-    color: #000;
+.navbar-menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
 }
-.port:hover {
-    color: #000 !important;
-    text-decoration: none !important;
- }
+.navbar-menu li {
+    margin: 0 10px;
+}
+.navbar-menu li {
+    margin: 0 10px;
+}
 
-                                    /*       HOME       */
-/*COL1 IMAGE*/
+/*      HOME      */
 .img-fluid{
-    margin-top: 0;
-    width: 25vw;
+    margin: 10% 0 0 15%;    /* 20px 0px 0px 30px */
+    width: 30vw;
     border-radius: 50%;
     box-shadow: 15px 15px 33px 10px rgb(27 149 212 / 56%), 15px 20px 15px 20px rgb(101 232 235 / 29%);
-
 }
-
-/*TEXT*/
 .col-lg-6{
-
-    margin-top: 10%;
+    font-family: 'Noto Serif', serif;
+    margin-top: 15px;
+    padding-top: 10px;
     color: #000;
+ }
+ #home h1{
+    margin-top: 25px;
+    font-size: 80px;
+    margin-left: -55px;
+ }
+ #home h3{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-left: -55px;
  }
  .col-lg-6 span{
     color: #0a6fdd;
  }
- .navbar-toggler span{
-     color: #4f9ed0de;
-     font-size: 40px;
- }
+ 
 
-                                    /*       ABOUT       */
-#about .col-lg-6{
-    color: #000;
-    margin-top: 1px;
+ /*      ABOUT      */
+#about .col-lg-6 p{
+    font-style: oblique;
     font-size: 18px;
 }
-#about .img-fluid1{
-    padding-top: 10px;
-    height: 70vh;
-    width: 40vw;
-    border-color: #000;
+.custom-image{
+    max-width: 100%; 
+    height: auto;
+    border: 5px solid #000;
+    margin-top: 15px;
+    
 }
 
-                                    /*       SKILLS       */
-/* Add your custom CSS rules here */
-
-.carousel-indicators{
-    padding: 0px 23px 209px 0px;
-
+/*      SKILLS      */
+#skills h2{
+    margin-top: 45px;
+    padding: 10px 0 10px 0;
 }
-.carousel-item {
-    height: 212px; /* Adjust the height of the carousel items */
-    margin: 23px 0px -30px 20px;
-}
-
 .card {
-    margin-bottom: 20px; /* Adjust the spacing between cards */
-    display: flex;
-    align-items: center;
-    border: 10px solid rgb(0, 0, 0);
-    border-radius: 8px;
-    padding: 10px;
+    display: block !important; /* Override display: flex; */
+    border: none;
+    background-color: transparent; /* Make the card background transparent */
+    text-align: center; /* Center the content within the card */
+}
+.carousel-item .row{
+    margin: 40px 30px 10px 30px;
+    padding: 0 100px 0 100px;
 }
 
-.card-img-top {
-    max-height: 115px; /* Adjust the height of the card images */
-}
-.card-body{
-    padding: 0.25rem;
-}
-.skill {
-    font-weight: bold; /* Adjust the font weight of the skill text */
+.card-body {
+    padding-top: 30; /* Remove padding from card body */
+    /* font-family: ; */
+    font-size: 50px;
 }
 
-#skills .container{
-    margin-top: 30px;
-    margin-bottom: auto;
+
+.skill-icon {
+    width: 152px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
-#skills .row{
+.card-text {
+    text-align: center;
+}
+
+/*      PROJECTS      */
+#projects {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 90px;
-    margin-left: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
 }
-/* #skills .col-lg-6 {
-    display: inline-block;
-    /*margin-right: 15px;  Adjust spacing between skills 
-  } */
-#skills img{
-    height: auto;
-    max-width: 100px;
-    margin: -5px 10px 10px 10px;
+#projects .pro{
+    margin-top: 5px;
+    padding-top: 5px;
 }
-#skills span{
-    color: #000;
+
+.project-card {
+    background-color: #ffffff;
+    box-shadow: 8px 8px 0px rgb(12 76 146 / 97%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(40% - -60px);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.project {
+    width: 100%;
+}
+
+.project h2 {
+    color: #031ad1;
     font-size: 20px;
 }
 
-                                    /*       PROJECTS       */
-#projects .container{
-    margin-top: 20px;
-    margin-bottom: auto;
-}
-#projects .project{
-    /*margin-top: auto;*/
-    color: #000;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.project h3 {
+    color: #3896cc;
+    font-size: 18px;
 }
 
-                                    /*       CONTACT      
-#contact{
-     /* background-color: #f8f9fa; Add background color to the contact section 
-    padding: 30px; /* Add padding to create space between content and edges
-    border-radius: 20px;
-    
-}
-#contact .container{
-    margin-top: 10px;
-    
-}
-form{
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
+.project ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-.form-group input[type="text"], .form-group input[type="email"], .form-group textarea{
-    border: 1px solid #000000; /* Add border to input fields 
-    border-radius: 10px; /* Add border radius for rounded corners 
-    padding: 10px; /* Add padding inside input fields 
-    width: 100%; /* Make input fields expand to fill container 
-    margin-bottom: 15px; /* Add margin between input fields 
-}
-.form-group input[type="text"]::placeholder,
-.form-group input[type="email"]::placeholder,
-.form-group textarea::placeholder {
-    color: #000; /* Change the placeholder text color 
-    font-size: 20px; /* Change the placeholder text size 
+.project p {
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-.btn{
-    text-align: center;
+.project-card:last-child {
+    width: 95%; /* Make the last card full width */
+    margin: 0; /* Remove right margin for the last card */
 }
-*/  
 
 
-                                    /*      FOOTER         */
+
+/*      CONTACTS      */
 footer {
-  background-image: url(images/footerbg.png);
-  display: flex; /* Use flexbox to arrange items */
-  justify-content: space-between; /* Distribute items evenly along the main axis */
-  padding: 1.0rem 0 1.5rem 0;
-  
+    background-image: url(images/footerbg.png);
+    /*display: flex; /* Use flexbox to arrange items */
+    /*justify-content: space-between; /* Distribute items evenly along the main axis */
+    /* padding: 1.0rem 0 1.5rem 0; */
 }
-#footer .img-fluid1 {
-    margin: -25% 50% -23px -23%;
-    /* padding: 0px 0px 0px 0px; */
+
+footer img {
+    margin: -74px 0px -45px -16px !important;
     height: 42vh;
     width: 40vw;
     border: 4px solid black;
     border-radius: 0 50px 0 50px; /*top-left top-right bottom-right bottom-left*/
 }
 
-.list-inline-item {
-    margin: 0 50px; /* Add margin to each list item */
-  }
+footer .col-lg-6{
+    margin-top: 15px;
+    padding-top: 10px;
+    color: #000;
+ }
 
-.list-inline-item a i {
-    color: rgb(0, 0, 0); /* Set the default icon color */
-    font-size: 40px;
-    text-decoration: none; /* Remove underline */
+footer ul {
+    list-style-type: none;
+    margin-top: -40px;
+    padding: 0;
 }
 
-/*.list-inline-item a:hover i {
-  color: #1CBFB6; /* Change the icon color on hover 
-}*/
+footer ul li {
+   margin-bottom: 0px; /* Add margin to each list item */
+   display: inline;
+   list-style-type: none;
+   margin-right: 110px;
+   padding: 0;
 
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    /* display: block; */
+    margin-right: -40px;
+}
+
+footer ul li a i {
+    color: rgb(0, 0, 0); /* Set the default icon color */
+    font-size: 70px;
+    text-decoration: none; /* Remove underline */
+}
 
 /* Tooltips */
 .tooltiptext {
     visibility: hidden;
     width: 200px;
     background-color: black;
-    color: #fff;
+    /* color: #fff;  */
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
-    z-index: 1;
-    top: 40px;
-    left: 42%;
-    margin-left: -60px;
+    /* z-index: 1; */
+    top: 60px;
+    left: -35px;
+    margin-left: 135px;
     opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 18px;
-    transform: translateX(5%); /* Center tooltip horizontally */
-    transition: opacity 0.3s;
+    /* transition: opacity 0.3s; */
+    font-size: 30px;
+    transform: translateX(5%);
+    
 }
+
 /* Show the tooltip text when hovering over the icon */
-.list-inline-item a:hover .tooltiptext {
+footer ul li a:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
@@ -237,54 +255,44 @@ footer {
 
 
 
-/*                FOR SMALLER MEDIA                                      */
-/* Media Query for smaller screens */
-@media only screen and (max-width: 768px) {
-    /* Adjust padding and margins for smaller screens */
-    #home .col-lg-6, #about .col-lg-6 {
-      margin-top: 10%;
-    }
-    #home h1 {
-      font-size: 24px;
-    }
-    /* Stack columns vertically on smaller screens */
-    #about .row {
-      flex-direction: column;
-    }
-    /* Adjust image size for smaller screens */
-    .img-fluid {
-      width: 50%;
-    }
-    /* Adjust font size for smaller screens */
-    span {
-      font-size: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        background-color: #f8f9fa;
+        top: 4rem;
+        left: 0;
     }
 
-    .navbar-toggler{
-        color:black !important;
-      }
-    .img-fluid1{
-        height: 247px !important;
-        width: 238px !important;
+    .navbar-menu.active {
+        display: flex;
     }
 
-    .list-inline-item {
-        margin: 0 22px !important; /* Add margin to each list item */
+    .navbar-menu li {
+        margin: 10px 0;
     }
-    
-    /* #contact{
-       padding-top: 50px !important;
-    } */
 
-    #footer .img-fluid1 {
-        margin: -15% 8% -122px -4%;
-        /* padding: 0px 0px 0px 0px; */
-        height: 55vh !important;
-        width: 70vw !important;
-        border: 4px solid black;
-        border-radius: 0 50px 0 50px; /*top-left top-right bottom-right bottom-left*/
+    .navbar-toggle {
+        display: block;
+        font-size: 1.5rem;
     }
-  
-  /*asdfghjk*/
 
-  
+    .navbar-icon {
+        color: #333;
+    }
+}
